@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="lib/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="lib/css/style.css">
+  <title>digikala</title>
+</head>
+<body>
+  <header style="height: 160px; width: 100vw;position: sticky;top: 0px; background-color: #fff; z-index: 100; padding-top: 10px;">
+      <div class="container-fluid bg-000 d-flex my-3 justify-content-between">
+        <div class="container-lg d-flex bg-000 justify-content-center px-2" style="min-width: 85%;">
+          <div class="row w-100 justify-content-center align-items-center">
+            <div class="col-11 justify-content-center col-xl-1 d-flex">
+              <div class="my-2" style="min-width: 130px;">
+              <a href="#"><img src="lib/img/logo.svg" class="img-fluid" alt="digikala"></a>
+              </div>
+            </div>
+            <div class="col-8 d-none d-xl-block">
+              <div class="input-group d-flex justify-content-lg-start w-75">
+                <button class="btn btn-secondary border-0" style="border-radius: 0px 10px 10px 0px; background-color: #f1f2f4;" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" fill="currentColor" class="bi bi-search text-body-secondary" viewBox="0 0 16 16" style= "margin-right: 5px;">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                  </button>
+                  <input type="text" class="form-control border-0 mx-0" placeholder="جستجو..." style="border-radius: 10px 0px 0px 10px; padding-right: 0; min-height: 45px; font-size: 13px; background-color: #f1f2f4; max-width: 550px;">
+                </div>
+            </div>
+            <div class="col-9 d-block d-xl-none px-0 py-4">
+              <div class="input-group d-flex justify-content-lg-start">
+                <button class="btn btn-secondary border-0" style="border-radius: 0px 10px 10px 0px; background-color: #f1f2f4;" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" fill="currentColor" class="bi bi-search text-body-secondary" viewBox="0 0 16 16" style= "margin-right: 5px;">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                  </button>
+                  <input type="text" class="form-control border-0 mx-0" placeholder="جستجو..." style="border-radius: 10px 0px 0px 10px; padding-right: 0; min-height: 45px; font-size: 13px; background-color: #f1f2f4;">
+                </div>
+            </div>
+            <div class="col-3 col-xl-3 my-1">
+              <div class="row justify-content-start justify-content-xl-end align-items-center g-0 ">
+                <div class="col-6" style="max-width: 125px;">
+                  <a href="#" class="btn btn-outline-secondary d-none d-xl-block" style="font-size: 13px; font-weight: 600; padding: 10px; color: black;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="currentColor" class="bi bi-box-arrow-in-left" viewBox="0 0 16 16" style="margin-left:10px;">
+                    <path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z"/>
+                    <path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                  </svg>ورود | ثبت نام</a>
+                  <a href="#"  class="d-xl-none d-block" style="font-size: 14px; font-weight: 600; padding: 10px; color: black; text-decoration: none;min-width: 100px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="currentColor" class="bi bi-box-arrow-in-left" viewBox="0 0 16 16" style="margin-left:10px;">
+                    <path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z"/>
+                    <path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/></svg>ورود</a>
+                </div>
+                <div class="col-1">
+                  <span class="bg-dark mx-3 d-none d-lg-block" style="width: 2px; height: 20px;"></span>
+                </div>
+                <div class="col-1">
+                  <a href="#" style="color: black; font-weight: 900;"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="25" fill="currentColor" class="bi bi-cart mx-2" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg></a>
+                </div>
+              </div>
+            </div>
+            <nav class="navbar navbar-expand-xl bg-#000 col-1 col-xl-12 order-first order-xl-last border-0">
+              <div class="container-fluid m-0 p-0 border-0">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                  <span class="navbar-toggler-icon border-0"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                      <a href="/" class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><img src="/moradi2/lib/img/digikala.png" class="img-fluid" alt="لوگو"></a>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body nav1" style="overflow-x: hidden;">
+                  <ul class="navbar-nav my-3 align-items-center p-0" id="navbar1" style="font-size: 13px; padding-left: 15px!important; min-width: 50vw;">
+                    <li class="nav-item order-last order-xl-first">
+                        <a class="nav-link text-black" href="#"  data-bs-toggle="dropdown"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                          </svg>دسته بندی کالاها</a>
+                            <div>
+                                <ul class="dropdown-menu">
+                                   <li><a class="dropdown-item" href="#">موبایل</a> </li>
+                                   <li><a class="dropdown-item" href="#">کالای دیجیتال</a></li>
+                                   <li><a class="dropdown-item" href="#">وسایل سوپرمارکتی</a></li>
+                                   <li><a class="dropdown-item" href="#">مد و پوشاک</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <span class="bg-dark-subtle mx-1 d-none d-xl-block" style="width: 1px; height: 15px; padding-bottom: 0!important;"></span>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#supermarket"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2 svg" viewBox="0 0 16 16">
+                          <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                          <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                        </svg>سوپرمارکت</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire svg" viewBox="0 0 16 16">
+                          <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/>
+                        </svg>پرفروش ترین ها</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#pishnahadha"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-perforated svg" viewBox="0 0 16 16">
+                          <path d="M4 4.85v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Z"/>
+                          <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13ZM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9V4.5Z"/>
+                        </svg>تخفیف ها و پیشنهاد ها</a>
+                      </li>   
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-activity svg" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+                        </svg>شگفت انگیزها</a>
+                      </li>    
+                      <span class="bg-dark-subtle mx-1 d-none d-xl-block" style="width: 1px; height: 15px; padding-bottom: 0!important;"></span>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#footer">سوالی دارید؟</a>
+                      </li>   
+                      <li class="nav-item">
+                        <a class="nav-link" href="#footer">در دیجی کالا بفروشید!</a>
+                      </li>     
+                    </ul>
+                  </div>
+                </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+    </header>
+    <div id="carouselExampleInterval" class="carousel slide m-0" data-bs-ride="carousel">
+        <div class="carousel-inner" style="z-index: -2;">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="https://dkstatics-public.digikala.com/digikala-adservice-banners/c839b1f18bc20e7b587e5a7b6a722dc932062b0d_1685441171.gif?x-oss-process=image" class="d-block w-100 cimg img-fluid" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="https://dkstatics-public.digikala.com/digikala-adservice-banners/c29aed1cf12c0740048d5b7a9cfdafec70770c4e_1686055788.gif?x-oss-process=image" class="d-block w-100 cimg img-fluid" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="https://dkstatics-public.digikala.com/digikala-adservice-banners/3c681a387768b79424f28abc23319df075367894_1686052904.jpg?x-oss-process=image/quality,q_95" class="d-block w-100 cimg img-fluid" alt="...">
+          </div>
+          <div class="carousel-item"data-bs-interval="5000">
+            <img src="https://dkstatics-public.digikala.com/digikala-adservice-banners/59f6b30403b7065e7dfe4b71b4b5f586b9d773f4_1686043165.jpg?x-oss-process=image/quality,q_95" class="d-block w-100 cimg img-fluid" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="https://dkstatics-public.digikala.com/digikala-adservice-banners/1a82115c440f7baa3e94c5d03bcd86caebdce36d_1684309047.jpg?x-oss-process=image/quality,q_95" class="d-block w-100 cimg img-fluid" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="https://dkstatics-public.digikala.com/digikala-adservice-banners/35e74ed89753efb7d9165f7bcbdb90d05190a527_1686057869.jpg?x-oss-process=image/quality,q_95" class="d-block w-100 cimg img-fluid" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="https://dkstatics-public.digikala.com/digikala-adservice-banners/5c4b24506b29b4c1d56148c4c6ab50adf5d7d837_1686035011.jpg?x-oss-process=image/quality,q_95" class="d-block w-100 cimg img-fluid" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="bg-#000 w-100">
+        <div class="container bg-#000 my-5">
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-6">
+                <div class="row justify-content-around align-items-baseline" style="text-align: center;">
+                <div class="col-2">
+                    <div class="imgicone">
+                        <a href="">
+                        <img src="lib/img/jet.png" alt="" style="object-fit: cover; border-radius: 0px;" class="img-fluid">
+                            <div class="iconname"> دیجی کالا جت</div>
+                        </img>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="imgicone">
+                        <a href="#">
+                        <img src="lib/img/haraj.png" alt="" style="object-fit: cover; border-radius: 0px;" class="img-fluid">
+                            <div class="iconname">حراج استایل</div>
+                        </img>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="imgicone">
+                        <a href="#">
+                        <img src="lib/img/qesti.png" alt="" style="object-fit: cover; border-radius: 0px;"class="img-fluid">
+                            <div class="iconname">خرید اقساطی</div>
+                        </img>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="imgicone">
+                        <a href="#">
+                        <img src="lib/img/servise.png" alt="" style="object-fit: cover; border-radius: 0px;"class="img-fluid">
+                            <div class="iconname">دیجی کالا سرویس</div>
+                        </img>
+                    </a>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <div class="col-12 col-md-6">
+                <div class="row justify-content-around align-items-baseline" style="text-align: center;">
+                <div class="col-2">
+                    <div class="imgicone">
+                        <a href="#">
+                        <img src="lib/img/lukybox.png" alt="" style="object-fit: cover; border-radius: 0px;"class="img-fluid">
+                            <div class="iconname">لاکی باکس</div>
+                        </img>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="imgicone">
+                        <a href="#">
+                        <img src="lib/img/plus.png" alt=""class="img-fluid">
+                            <div class="iconname">دیجی پلاس</div>
+                        </img>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="imgicone">
+                        <a href="#">
+                        <img src="lib/img/mamoriat.png" alt=""class="img-fluid">
+                            <div class="iconname">ماموریت ها</div>
+                        </img>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="imgicone">
+                        <a href="#">
+                        <img src="lib/img/More.svg" alt=""class="img-fluid" style="background-color: gray; border-radius: 50%;">
+                            <div class="iconname">بیشتر</div>
+                        </img>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-100">
+        <div class="container border-0 rounded-4" style="background-color: #ef3a4f; max-height: 280px;">
+            <div class="row" style="text-align: center;">
+                <div class="col-2 p-3">
+                    <a href="#">
+                    <img src="lib/img/Amazings.svg" class="img-fluid" alt="" style="z-index: 10; max-width: 80px;">
+                    <img src="lib/img/box.png" class="img-fluid" alt="" style="z-index: 11; max-width: 130px;">
+                    <a href="#" style="display: block; font-size: 15px; font-weight: 700; margin-top: 14px; color: #fff; min-width: 145px;">  مشاهده همه <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    </svg> </a>
+                    </a>
+                </div>
+                <div class="wrapper col-10 p-3">
+                  <ul class="items rounded-4">
+                    <li class="item">
+                      <div class="d-flex" style="flex-direction: column; align-items: center;">
+                        
+                      <img src="https://dkstatics-public.digikala.com/digikala-products/78727cccdfb56755c455487af22c86d6592a0a23_1674994981.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" alt="mobile" style="max-width: 150px;">
+                      <div class="qeymatha-box">
+                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 13px; fill: var(--color-icon-high-emphasis);" width="50" height="50"><defs><symbol id="toman" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path fill-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" clip-rule="evenodd"></path></symbol></defs><g fill="#3F4064"><path fill-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" clip-rule="evenodd"></path></g></svg>
+                      <div style="font-size: 14px; text-align: left !important;display: inline;">۵,۱۳۰,۰۰۰</div>                    
+                      <div class="badge rounded-pill bg-danger" style="font-size: 10px; margin-left: 30px;">۱۰%</div>
+                      </div>
+                    </li>
+                    <li class="item">
+                      <div class="d-flex" style="flex-direction: column; align-items: center;">
+                      <img src="https://dkstatics-public.digikala.com/digikala-products/653e21ae2ce80dde016bcb02d0d2f6258265b6e7_1675070859.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" alt="mobile" style="max-width: 150px;">
+                      <div class="qeymatha-box">
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 13px; fill: var(--color-icon-high-emphasis);" width="50" height="50"><defs><symbol id="toman" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path fill-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" clip-rule="evenodd"></path></symbol></defs><g fill="#3F4064"><path fill-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" clip-rule="evenodd"></path></g></svg><div style="font-size: 14px; text-align: left !important;display: inline;">۵۳۱,۰۰۰</div>
+                        <div class="badge rounded-pill bg-danger" style="font-size: 10px; margin-left: 30px;">۳۴%</div>
+                        </div>
+                    </li>                    
+                    <li class="item">
+                      <div class="d-flex" style="flex-direction: column; align-items: center;">
+                      <img src="https://dkstatics-public.digikala.com/digikala-products/d0387542c9c192a4ac9b299b1d84c3ee79f3fc7a_1684513963.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" alt="mobile" style="max-width: 150px;">
+                      <div class="qeymatha-box">
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 13px; fill: var(--color-icon-high-emphasis);" width="50" height="50"><defs><symbol id="toman" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path fill-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" clip-rule="evenodd"></path></symbol></defs><g fill="#3F4064"><path fill-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" clip-rule="evenodd"></path></g></svg><div style="font-size: 14px; text-align: left !important;display: inline;">۳۳۸,۰۰۰</div>
+                        <div class="badge rounded-pill bg-danger" style="font-size: 10px; margin-left: 30px;">۴۰%</div>
+                      </div>
+                    </li>                    
+                    <li class="item">
+                      <div class="d-flex" style="flex-direction: column; align-items: center;">
+                      <img src="https://dkstatics-public.digikala.com/digikala-products/4a14ddb2239a690aca695758cb9e356e795fd029_1670929411.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" alt="mobile" style="max-width: 150px;">
+                      <div class="qeymatha-box">
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 13px; fill: var(--color-icon-high-emphasis);" width="50" height="50"><defs><symbol id="toman" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path fill-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" clip-rule="evenodd"></path></symbol></defs><g fill="#3F4064"><path fill-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" clip-rule="evenodd"></path></g></svg><div style="font-size: 14px; text-align: left !important;display: inline;">۵۳۸,۰۰۰</div>
+                        <div class="badge rounded-pill bg-danger" style="font-size: 10px; margin-left: 30px;">۱۰%</div>
+                      </div>
+                    </li>                    
+                    <li class="item">
+                      <div class="d-flex" style="flex-direction: column; align-items: center;">
+                      <img src="https://dkstatics-public.digikala.com/digikala-products/b45512403c9a9df143cfafc842b58b5150a0a0ff_1668515411.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" alt="mobile" style="max-width: 150px;">
+                      <div class="qeymatha-box">
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 13px; fill: var(--color-icon-high-emphasis);" width="50" height="50"><defs><symbol id="toman" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path fill-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" clip-rule="evenodd"></path></symbol></defs><g fill="#3F4064"><path fill-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" clip-rule="evenodd"></path></g></svg><div style="font-size: 14px; text-align: left !important;display: inline;">۱۳۰,۰۰۰</div>
+                        <div class="badge rounded-pill bg-danger" style="font-size: 10px; margin-left: 30px;">۲۵%</div>
+                      </div>
+                    </li>                    
+                    <li class="item">
+                      <div class="d-flex" style="flex-direction: column; align-items: center;">
+                      <img src="https://dkstatics-public.digikala.com/digikala-products/a9d68f3d31e1fed089379f08ea9d2dafde0a6979_1607937664.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" alt="mobile" style="max-width: 150px;">
+                      <div class="qeymatha-box">
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 13px; fill: var(--color-icon-high-emphasis);" width="50" height="50"><defs><symbol id="toman" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path fill-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" clip-rule="evenodd"></path></symbol></defs><g fill="#3F4064"><path fill-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" clip-rule="evenodd"></path></g></svg><div style="font-size: 14px; text-align: left !important;display: inline;">۵,۱۳۰,۰۰۰</div>
+                        <div class="badge rounded-pill bg-danger" style="font-size: 10px; margin-left: 30px;">۳۲%</div>
+                      </div>
+                    </li>                    
+                    <li class="item m-0">
+                      <div class="d-flex" style="flex-direction: column; align-items: center;">
+                      <img src="https://dkstatics-public.digikala.com/digikala-products/8eaa9bf1ed3cc8055e0b0aedf855f28192e6cd19_1666700608.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" alt="mobile" style="max-width: 150px;">
+                      <div class="qeymatha-box">
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 13px; fill: var(--color-icon-high-emphasis);" width="50" height="50"><defs><symbol id="toman" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path fill-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" clip-rule="evenodd"></path></symbol></defs><g fill="#3F4064"><path fill-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" clip-rule="evenodd"></path></g></svg><div style="font-size: 14px; text-align: left !important;display: inline;">۵,۱۳۰,۰۰۰</div>
+                        <div class="badge rounded-pill bg-danger" style="font-size: 10px; margin-left: 30px;">۳۸%</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="w-100 " id="supermarket">
+        <div class="container-fluid container-xl border-0 rounded-4 my-5 mx-" style="background-color: #eaefec; max-height: 250px;">
+            <div class="row" style="text-align: center ; align-items:center;">
+                <div class="col-12 col-lg-6 p-3"> 
+                    <div class="row align-items-center">
+                        <div class="col-2">
+                            <img src="lib/img/fresh.png" class="img-fluid" alt="">
+                        </div>
+                         <div class="col-4 col-xl-6 p-3">
+                          <img src="lib/img/fresh.svg" class="img-fluid" alt="">
+                         </div>
+                          <div class="col-3 d-none d-xxl-block py-1"  style="background-color: rgb(57, 174, 0); border-radius: 20px;color: #fff; font-weight: bold; max-width: 130px; max-height: 30px;">
+                             تا ۳۸% تخفیف
+                           </div>
+                      </div>
+                     </div>
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex">
+                        <div>
+                            <div class="bg-white rounded-circle p-1" style="
+                            margin-right: 15px;
+                            margin-top: 22px;
+                        ">
+                            <img class="w-100 d-inline-block ls-is-cached lazyloaded" data-src="https://dkstatics-public.digikala.com/digikala-products/ef82c45e19b0dea21421862ed91964925f01842f_1597062408.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" width="52" height="53" alt="اسپری تمیزکننده سطوح آشپزخانه سیف مقدار 750 گرم " style="object-fit: contain; border-radius: 50px;" src="https://dkstatics-public.digikala.com/digikala-products/ef82c45e19b0dea21421862ed91964925f01842f_1597062408.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80">
+                            </div>
+                            <span class=" top-100 start-0 translate-middle badge rounded-pill bg-danger">
+                                ۳۴%
+                            </span>
+                        </div>
+                        <div>
+                            <div class="bg-white rounded-circle p-1" style="
+                            margin-right: 15px;
+                            margin-top: 22px;
+                        ">
+                            <img class="w-100 d-inline-block lazyloaded" data-src="https://dkstatics-public.digikala.com/digikala-products/0434b0acc6f91841753e4b1d490eb7b6c9fbed93_1631364481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" width="52" height="53" alt="مایع ظرفشویی لوفانته مدل KWB4200 حجم 3950 میلی لیتر مجموعه 2 عددی" style="object-fit: contain; border-radius: 50px;" src="https://dkstatics-public.digikala.com/digikala-products/0434b0acc6f91841753e4b1d490eb7b6c9fbed93_1631364481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80">
+                            </div>
+                            <span class=" top-100 start-0 translate-middle badge rounded-pill bg-danger">
+                                ۲۵%
+                            </span>
+                        </div>
+                        <div>
+                            <div class="bg-white rounded-circle p-1" style="
+                            margin-right: 15px;
+                            margin-top: 22px;
+                        ">
+                            <img class="w-100 d-inline-block lazyloaded" data-src="https://dkstatics-public.digikala.com/digikala-products/542a5bb0cbad0cc57da5cad9fda36248947336e0_1677498638.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" width="52" height="53" alt="دستمال حوله کاغذی کلین آپ مدل ابر بسته 6 عددی " style="object-fit: contain; border-radius: 50px;" src="https://dkstatics-public.digikala.com/digikala-products/542a5bb0cbad0cc57da5cad9fda36248947336e0_1677498638.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80">
+                            </div>
+                            <span class=" top-100 start-0 translate-middle badge rounded-pill bg-danger">
+                                ۱۸%
+                            </span>
+                        </div>
+                        <div>
+                            <div class="bg-white rounded-circle p-1" style="
+                            margin-right: 15px;
+                            margin-top: 22px;
+                        ">
+                            <img class="w-100 d-inline-block lazyloaded" data-src="https://dkstatics-private.digikala.com/digikala-products/f5312f9cdf6170bc81ee8235030b94b8146c5c31_1630931351.jpg?OSSAccessKeyId=LTAIPClJziKGRUZJ&amp;Expires=1941971353&amp;Signature=k4kNdXpcfsA%2B5FAZwOW0Pl7O400%3D" width="52" height="53" alt="صابون شستشو لوکس مدل رز فرانسوی وزن 90 گرم بسته 6 عددی" style="object-fit: contain;border-radius: 50px;" src="https://dkstatics-private.digikala.com/digikala-products/f5312f9cdf6170bc81ee8235030b94b8146c5c31_1630931351.jpg?OSSAccessKeyId=LTAIPClJziKGRUZJ&amp;Expires=1941971353&amp;Signature=k4kNdXpcfsA%2B5FAZwOW0Pl7O400%3D">
+                            </div>
+                            <span class=" top-100 start-0 translate-middle badge rounded-pill bg-danger">
+                                ۳۰%
+                            </span>
+                        </div>
+                        <div>
+                            <div class="bg-white rounded-circle p-1" style="
+                            margin-right: 15px;
+                            margin-top: 22px;
+                        ">
+                            <img class="w-100 d-inline-block lazyloaded" data-src="https://dkstatics-public.digikala.com/digikala-products/4428984.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" width="52" height="53" alt="پودر پنیر پارمسان کاله - 100 گرم" style="object-fit: contain;border-radius: 50px;" src="https://dkstatics-public.digikala.com/digikala-products/4428984.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80">
+                            </div>
+                            <span class=" top-100 start-0 translate-middle badge rounded-pill bg-danger">
+                                ۳۸%
+                            </span>
+                        </div>
+                        <div class="col-5 align-items-center justify-content-center d-grid ">
+                          <div class="rounded-5 justify-content-center align-content-center p-2 bg-white"  style="color: rgb(57, 174, 0); font-size: 16px; padding-left: 20px !important; padding-right: 20px !important;">
+                            <span class="d-xl-inline-block d-none">بیش از ۹۰ کالا</span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                            </svg>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+    <div class="container border-0 rounded-3">
+      <div class="row" style="text-align: center ; align-items:center;">
+        <div class="col-xl-3 col-6 mb-4"><a href="#"><img src="lib/img/tala.png" alt="takhfif"  class="rounded-4 img-fluid"></a></div>
+        <div class="col-xl-3 col-6 mb-4"><a href="#"><img src="lib/img/tolips.png" alt="takhfif"  class="rounded-4 img-fluid"></a></div>
+        <div class="col-xl-3 col-6 mb-4"><a href="#"><img src="lib/img/oltera.png" alt="takhfif"  class="rounded-4 img-fluid "></a></div>
+        <div class="col-xl-3 col-6 mb-4"><a href="#"><img src="lib/img/gen.png" alt="takhfif" class="rounded-4 img-fluid"></a></div>
+      </div>
+    </div>
+    <h5 style="font-weight: bold; text-align: center;" class="p-5"> دسته بندی های دیجی کالا</h5>
+    <div class="container">
+      <div class="row" style="text-align: center ; align-items:center;">
+        <div class="col-xl-2 col-4 mb-5">
+          <img src="lib/img/mobile.png" alt="" style="width: 220px;" class="img-fluid">
+          <div style="font-weight: 600; font-size: 14px;">موبایل</div>
+        </div>
+        <div class="col-xl-2 col-4 mb-5">
+          <img src="lib/img/digital.png" alt="" style="width: 200px;" class="img-fluid">
+          <div style="font-weight: 600; font-size: 14px;">کالای دیجیتال</div>
+        </div>
+        <div class="col-xl-2 col-4 mb-5">
+          <img src="lib/img/khane.png" alt="" style="width: 200px;" class="img-fluid">
+          <div style="font-weight: 600; font-size: 14px;">خانه و آشپزخانه</div>
+        </div>
+        <div class="col-xl-2 col-4 mb-5">
+          <img src="lib/img/poshak.png" alt="" style="width: 200px;" class="img-fluid">
+          <div style="font-weight: 600; font-size: 14px;">مد و پوشاک</div>
+        </div>
+        <div class="col-xl-2 col-4 mb-5">
+          <img src="lib/img/marketi.png" alt="" style="width: 200px;" class="img-fluid">
+          <div style="font-weight: 600; font-size: 14px;">کالا های سوپرمارکتی</div>
+        </div>
+        <div class="col-xl-2 col-4 mb-5">
+          <img src="lib/img/honar.png" alt="" style="width: 175px;" class="img-fluid">
+          <div style="font-weight: 600; font-size: 14px;">کتاب،لوازم تحریر و هنر </div>
+        </div>
+        <div class="col-xl-2 col-4">
+          <img src="lib/img/kodak.png" alt="" style="width: 200px;" class="img-fluid">
+          <div style="font-weight: 600; font-size: 14px;">اسباب بازی،کودک و نوزاد</div>
+        </div>
+        <div class="col-xl-2 col-4">
+          <img src="lib/img/zibaei.png" alt="" style="width: 200px;" class="img-fluid">
+          <div style="font-weight: 600; font-size: 14px;"> زیبایی و سلامت </div>
+        </div>
+        <div class="col-xl-2 col-4">
+          <img src="lib/img/varzesh.png" alt="" style="width: 200px;" class="img-fluid">
+          <div style="font-weight: 600; font-size: 14px;">ورزش و سفر</div>
+        </div>
+        <div class="col-xl-2 col-4">
+          <img src="lib/img/abzar.png" alt="" style="width: 200px;" class="img-fluid">
+          <div style="font-weight: 600; font-size: 14px;">  ابزار،لوازم ساختمانی و صنعتی</div>
+        </div>
+        <div class="col-xl-2 col-4">
+          <img src="lib/img/khodro.png" alt="" style="width: 200px;" class="img-fluid">
+          <div style="font-weight: 600; font-size: 14px;"> خودرو و متورسیکلت </div>
+        </div>
+        <div class="col-xl-2 col-4">
+          <img src="lib/img/mahali.png" alt="" style="width: 200px;" class="img-fluid">
+          <div style="font-weight: 600; font-size: 14px;"> محصولات بومی و محلی </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" style="text-align: center ; align-items:center;">
+        <div class="col-xl-6 col-12"><a href="#"><img src="lib/img/mens.png" class="img-fluid rounded-4 m-5" alt="" style="margin-right:0 !important ; margin-bottom: 0px !important;"></a></div>
+        <div class="col-xl-6 col-12"><a href="#"><img src="lib/img/chayee.png" class="img-fluid rounded-4 m-5" alt="" style="margin-right:0 !important ;margin-bottom: 0px !important;"></a></div>
+      </div>
+    </div>
+    <h4 style="font-weight: 600; text-align: center;" class="p-5" id="pishnahadha"> پیشنهاد دیجی کالا </h4>
+    <div class="container">
+      <div class="row rounded-4 mb-5" style="border: 2px solid rgba(124, 124, 124, 0.897); text-align: center ; align-items:center;">
+        <div class="col-2" style="min-width: 140px;">
+          <a href="#">
+            <img src="lib/img/goshimobile.png" class="img-fluid" alt="" style="max-width: 140px;">
+            <p>گوشی مبایل</p>
+          </a>
+        </div>
+        <div class="col-2" style="min-width: 140px;">
+          <a href="#">
+            <img src="lib/img/consol.png" class="img-fluid" alt="" style="max-width: 140px;">
+            <p> کنسول خانگی</p>
+          </a>
+        </div>
+        <div class="col-2" style="min-width: 140px;">
+          <a href="#">
+            <img src="lib/img/watch.png" class="img-fluid" alt="" style="max-width: 140px;">
+            <p> ساعت هوشمند</p>
+          </a>
+        </div>
+        <div class="col-2" style="min-width: 140px;">
+          <a href="#">
+            <img src="lib/img/tablet.png" class="img-fluid" alt="" style="max-width: 140px;">
+            <p> تبلت</p>
+          </a>
+        </div>
+        <div class="col-2" style="min-width: 140px;">
+          <a href="#">
+            <img src="lib/img/spiker.png" class="img-fluid" alt="" style="max-width: 140px;">
+            <p>اسپیکر(بلندگو) </p>
+          </a>
+        </div>
+        <div class="col-2" style="min-width: 140px;">
+          <a href="#">
+            <img src="lib/img/cover.png" class="img-fluid" alt="" style="max-width: 140px;">
+            <p>کیف وکاور گوشی  </p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <hr>
+      <div class="px-5">
+        <div>
+          <img src="lib/img/digi.svg" alt="digikala" class="img-fluid pt-4" style="width: 110px;">
+        </div>
+        <div>
+          <p style="font-size: 13px; font-family: vazir;" class="mt-3">تلفن پشتیبانی ۰۹۱۹۲۸۲۰۸۷۷        |         ۷ روز هفته ۲۴ ساعت شبانه روز پاسخگوی شما هستیم</p>
+        </div>
+          <div class="row" style="justify-content: center; align-items: center; text-align: center;">
+            <div class="col-2 d-xl-block d-none"><img src="lib/img/express-delivery.svg" alt=""><p style="font-size: 11px;">امکان تحویل اکسپرس</p></div>
+            <div class="col-2 d-xl-block d-none"><img src="lib/img/cash-on-delivery.svg" alt=""><p style="font-size: 11px;">امکان پرداخت در محل</p></div>
+            <div class="col-2 d-xl-block d-none"><img src="lib/img/support.svg" alt=""><p style="font-size: 11px;"> ۷ روز هفته ۲۴ ساعت</p></div>
+            <div class="col-2 d-xl-block d-none"><img src="lib/img/days-return.svg" alt=""><p style="font-size: 11px;">هفت روز ضمانت بازگشت کالا</p></div>
+            <div class="col-2 d-xl-block d-none"><img src="lib/img/original-products.svg" alt=""><p style="font-size: 11px;">امکان پرداخت در محل</p></div>
+          </div>
+        </div>
+       <div class="row px-5 pt-5 justify-content-between">
+            <ul style="font-weight: 500; font-size: 16px; line-height: 34.4px; color: #3f4064;" class="col-lg-3 col-4">
+              <h5 style="line-height: 34.4px; color: #3f4064; font-size: 16px; font-weight: 600;"> با دیجی کالا</h5> 
+              <li><a href="#" class="zirmenu">اتاق خبر دیجی کالا</a></li>
+              <li><a href="#" class="zirmenu">فروش در دیجی کالا</a></li>
+              <li><a href="#" class="zirmenu">فرصت های شغلی</a></li>
+              <li><a href="#" class="zirmenu">گزارش تخلف در دیجی کالا</a></li>
+              <li><a href="#" class="zirmenu">تماس با دیجی کالا</a></li>
+              <li><a href="#" class="zirmenu">درباره دیجی کالا</a></li>
+            </ul>
+            <ul class="col-lg-3 col-4">
+              <h5 style="line-height: 34.4px; color: #3f4064; font-size: 16px; font-weight: 600;">خدمات مشتریان</h5>
+              <li><a href="#" class="zirmenu">پاسخ به پرسش های متداول</a></li>
+              <li><a href="#" class="zirmenu">رویه های بازگرداندن کالا</a></li>
+              <li><a href="#" class="zirmenu">شرایط استفاده</a></li>
+              <li><a href="#" class="zirmenu">حریم خصوصی</a></li>
+              <li><a href="#" class="zirmenu">گزارش باگ</a></li>
+            </ul>
+            <ul class="col-lg-3 d-lg-block d-none">
+              <h5 style="line-height: 34.4px; color: #3f4064; font-size: 16px; font-weight: 600;">راهنمای خرید از دیجی کالا</h5>
+              <li><a href="#" class="zirmenu">نحوه ثبت سفارش</a></li>
+              <li><a href="#" class="zirmenu">رویه ارسال سفارش</a></li>
+              <li><a href="#" class="zirmenu">شیوه های پرداخت</a></li>
+            </ul>
+            <div class="col-xl-3 ">
+              <h5 style="line-height: 34.4px; color: #3f4064; font-size: 16px; font-weight: 600;"> همراه ما باشید!</h5>
+              <div class="d-flex">
+                <div style="margin-left: 20px;"><a href="#"><img src="lib/img/instagram.svg" alt="instagram"></a></div>
+                <div style="margin-left: 20px;"><a href="#"><img src="lib/img/twiter.svg" alt="twiter"></a></div>
+                <div style="margin-left: 20px;"><a href="#"><img src="lib/img/linkdin.svg" alt="linkdin"></a></div>
+                <div style="margin-left: 20px;"><a href="#"><img src="lib/img/aparat.svg" alt="aparat"></a></div>
+              </div>
+              <h5 style="line-height: 34.4px; color: #3f4064; font-size: 16px; font-weight: 600;" class="py-4 d-none d-lg-block">با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید</h5>
+              <div class="d-flex mb-3 mt-3" style="flex-direction: row-reverse;">
+                <button style="border-radius: 10px; border: 0; color: rgb(255, 255, 255);padding: 10px 20px 10px 20px; background-color: #dfe1e6;">ثبت</button>
+                <input type="email" placeholder="ایمیل شما" style="border: none; border-radius: 10px;background-color: #f1f2f4; text-align: right; padding: 10px; margin-left: 5px; width: 100%;">
+              </div>
+            </div>
+          <div class="rounded-3 align-items-center mb-3" style="background-color: #3c4b6d;">
+              <div class="row justify-content-center justify-content-lg-start" style="align-items:center;">
+                <div class="col-xl-3 col-12">
+                  <div>
+                    <img src="lib/img/footerlogo2.png" alt="logo" style="width: 45px; margin: 15px; margin-right: 0;">
+                    <p style="color: #fff; font-size: 24px; font-weight: 500; display: inline-block;" >دانلود اپلیکیشن دیجی کالا</p>
+                  </div>
+                </div>
+                <div class="row col-9 justify-content-lg-end">
+                  <div class="col-lg-2 col-6 w-auto mb-xl-0 mb-3"><a href="#"><img src="lib/img/coffe-bazzar.svg" alt="takhfif"  class="rounded-2" style="height: 40px;"></a></div>
+                  <div class="col-lg-2 col-6 w-auto mb-xl-0 mb-3"><a href="#"><img src="lib/img/google-play.svg" alt="takhfif"  class="rounded-2" style="height: 40px;"></a></div>
+                  <div class="col-lg-2 col-6 w-auto mb-xl-0 mb-3"><a href="#"><img src="lib/img/sib-app.svg" alt="takhfif"  class="rounded-2" style="height: 40px;"></a></div>
+                  <div class="col-lg-2 col-6 w-auto mb-xl-0 mb-3"><a href="#"><img src="lib/img/myket.svg" alt="takhfif" class="rounded-2" style="height: 40px;"></a></div>
+                  <div class="col-lg-1 d-none d-xl-block w-auto"><a href="#"><img src="lib/img/More.svg" alt="takhfif" class="rounded-2" style="height: 40px; margin-right: 5px; background-color: #fff;"></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5 mb-5">
+                <div class="d-none d-xl-block">
+                  <div style="border: 1px solid gray; display: inline-block; border-radius: 10px; margin-right: 5px; width: 120px; height: 120px;" class="float-end img-fluid"><a href="#"><img src="lib/img/rezi.png" alt="" height="90px" width="auto" style="margin-top: 15px; margin-right: 13px;"></a></div>
+                  <div style="border: 1px solid gray; display: inline-block; border-radius: 10px; margin-right: 5px;width: 120px; height: 120px;" class="float-end img-fluid"><a href="#"><img src="lib/img/kasbokar.png" alt="" height="90px" width="auto" style="margin-top: 11px; margin-right: 25px;"></a></div>
+                  <div style="border: 1px solid gray; display: inline-block; border-radius: 10px; margin-right: 5px;width: 120px; height: 120px;" class="float-end img-fluid"><a href="#"><img src="lib/img/logo.png" alt="" height="90px" width="auto" style="margin-top: 15px; margin-right: 20px;" ></a></div>
+                </div>
+                <div style="display: block ;line-height: 24.4px; width: 60%; text-align: justify;" id="textfooter">
+                  <h5>فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین.</h5>
+                  <p style="font-size: 13px;">
+                    یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمانی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛ ویژگی‌هایی که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود را داشته باشد.
+                    <br><span id="flip" style="color: rgb(109, 109, 236); cursor: pointer;"> مشاهده بیشتر</span>
+                    <div id="panel" style="font-size: 13px; display: none;">
+                      <h6>کدام محصولات در دیجی‌کالا قابل سفارش هستند؟</h6>
+                      تقریبا می‌توان گفت محصولی وجود ندارد که دیجی‌کالا برای مشتریان خود در سراسر کشور فراهم نکرده باشد. شما می‌توانید در تمامی روزهای هفته و تمامی شبانه روز یا در روزهای خاصی مثل حراج شگفت انگیز دیجی‌کالا که محصولات دارای تخفیف عالی می‌شوند، سفارش خود را به سادگی ثبت کرده و در روز و محدوده زمانی مناسب خود، درب منزل تحویل بگیرید. بعضی از گروه‌های اصلی و زیر مجموعه‌های پرطرفدار محصولات دیجی‌کالا شامل مواردی می‌شود که در ادامه به معرفی آن‌ها می‌پردازیم.
+                      <h6>کالای دیجیتال</h6>
+                      انواع گوشی موبایل از برندهای مختلفی مثل آیفون،  گوشی سامسونگ، گوشی نوکیا، گوشی شیائومی، گوشی هواوی، و...، انواع کنسول بازی ps4 و ps5، انواع تبلت‌های پرطرفدار مثل تبلت سامسونگ نوت 10، انواع هندزفری مثل هندزفری بی سیم، تلوزیون از برندهای مختلف مثل تلویزیون سامسونگ، سونی و...، انواع مانیتور، کیس، کیبورد، مودم از برندهای مختلف مثل مودم ایرانسل، آنتن و ... تنها بخشی از محصولاتی هستند که زیر مجموعه کالای دیجیتال در دیجی‌کالا قرار دارند.
+                      <h6>خودرو، ابزار و تجهیزات صنعتی</h6>
+                      انواع خودروهای ایرانی و خارجی از برندهای مطرحی مثل هوندا، کیا و...، موتور سیکلت از برندهایی مثل کویر موتور و...، لوازم جانبی خودرو مثل سیستم صوتی تصویر، ضبط و...، لوازم یدکی مثل دیسک و صفحه کلاج و... و لوازم مصرفی خودرو مثل کفپوش سانا در این گروه قرار می‌گیرند.
+                      <h6>مد و پوشاک</h6>
+                      محصولاتی مثل انواع لباس مثل لباس مجلسی زنانه و مردانه، لباس راحتی، لباس ورزشی، اکسسوری، کیف، کفش، عینک آفتابی، لباس زیر، شال و روسری و... جزو مواردی هستند که می‌توانید آن‌ها را از برندهای مطرح ایرانی و خارجی موجود در دیجی کالا مثل آدیداس، نایکی، دبنهامز، آلدو، درسا و... خریداری کنید.
+                      <h6>اسباب بازی کودک و نوزاد</h6>
+                      در این دسته از کالاهای دیجی‌کالا، انواع لوازم بهداشتی و حمام کودک و نوزاد، انواع پوشاک و کفش، تبلت، اسباب‌بازی، لوازم اتاق خواب کودک، لوازم ایمنی، لوازم شخصی و غذا خوری و ... قرار می‌گیرد تا خرید را برای پدر و مادرها به کاری سریع و آسان تبدیل کند.
+                      <h6>کالاهای سوپر مارکتی</h6>
+                      هر چیزی از مواد خوراکی که به آن نیاز دارید، در سوپرمارکت دیجی‌کالا پیدا می‌شود، محصولات پرطرفداری مثل کره بادام‌زمینی، عسل، سس، قهوه، زعفران، شکلات، انواع نان و ... از برندهای معتبر و معروفی مثل نستله، نوتلا، استارباکس، مزمز، چی توز و ... همگی در اختیار شما هستند و تا رسیدن به آشپزخانه شما تنها چند کلیک فاصله دارند.
+                      <h6>زیبایی و سلامت</h6>
+                      انواع لوازم آرایش مثل لاک، رنگ مو، لوازم آرایش لب، چشم، صورت و... همگی در دیجی‌کالا موجود هستند. همچنین محصولات بهداشتی مثل انواع شامپو، کرم، ماسک صورت، ضد تعریق، ماسک مو  و...، انواع لوازم شخصی برقی، ست هدیه، بهترین انواع عطر و اسپری، انواع زیورآلات طلا و نقره مثل سرویس طلا، سرویس نقره و... به همراه وسایل مراقبت شخصی طبی در گروه زیبایی و سلامت دیجی‌کالا قرار می‌گیرد. در این بخش برندهای مطرحی مثل اسنس، پنبه ریز، سینره و... حضور دارند.
+                      <h6>خانه و آشپزخانه</h6>
+                      یکی از متنوع‌ترین بخش‌های دیجی‌کالا، بخش لوازم خانه و آشپزخانه است که از محصولاتی مثل صندلی گیمینگ در بخش صندلی‌ها گرفته تا انواع مبل راحتی، انواع آبگرمکن مثل آبگرمکن بوتان، لباسشویی‌های متنوع مثل انواع لباسشویی اسنوا، شیرآلات مختلف مثل شیرآلات قهرمان و...، ظروف و همچنین لوازم برقی آشپزخانه مثل توستر و... را شامل می‌شود و امکان خریدی عالی را برای مشتریان فراهم کرده است. در بخش لوازم خانگی دیجی‌کالا، برندهای معتبری مثل تفال، اخوان، فیلیپس، ال جی، اسنوا، جی پلاس و... حضور دارند.
+                      <br><span id="flipe" style="font-size: 12px; color: rgb(146, 146, 252);cursor: pointer;">بستن</span>
+                    </div>
+                    
+                  </p>
+                </div>
+             </div>
+        </div>
+       </footer>
+</body>
+<script src="lib/js/javascript.js"></script>
+<script src="lib/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $("#flip,#flipe").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+
+</script>
+</html>

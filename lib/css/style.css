@@ -1,0 +1,173 @@
+@font-face {
+    font-family: vazir;
+    font-style: normal;
+    font-weight: 400;
+    src: url("lib/font/Vazir-Regular.eot");
+    src: url("lib/font/Vazir-Regular.woff") format("woff");
+    src: url("lib/font/Vazir-Regular.ttf") format("ttf");
+    src: url("lib/font/Vazir-Regular.woff2") format("woff2");
+}
+    body{
+        font-family: vazir;
+        overflow-x: hidden;
+
+}
+
+ul{
+  list-style-type: none;
+}
+
+.nav1 ul li{
+    padding-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.nav1 ul li a{
+    padding-right: 0!important;
+}
+
+.svg{
+    margin-left: 2px;
+}
+
+@media(max-width:1200px){
+    #navbar1{
+      	color:black;
+        font-size: 16px !important;
+        font-weight: 500;
+        display: grid !important;
+      	grid-row-gap:14px;
+    }
+  	.svg{
+      margin-left:15px;
+  }
+
+}
+
+.cimg{
+    margin: auto;
+    min-height: 350px;
+    min-width: 1000px;
+    overflow-x: hidden;
+}
+
+.imgicone img{
+    width: 50px;
+}
+
+.iconname{
+    font-size: 11px;
+    font-weight: 900;
+}
+
+
+.wrapper {
+    position: relative;
+  }
+  .wrapper:before, .wrapper:after {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 100%;
+  }
+  .wrapper:before {
+    left: 0;
+  }
+  .wrapper:after {
+    right: 0;
+  }
+  
+  .items {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0;
+    cursor: pointer;
+  }
+  .items.active {
+    cursor: grab;
+  }
+  
+  .item {
+    display: inline-block;
+    margin-left: 3px;
+    user-select: none;
+    background: rgb(255, 255, 255);
+    width: 50%;
+    height: 240px;
+    color: #222;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 130px;
+    margin-bottom: 0;
+  }
+  .item:last-child {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 499px) {
+    .items{
+        width: 80%;
+        float: left;
+    }
+    .item{
+      width: 75%;
+    }
+  }
+
+  @media (min-width: 499px) and (max-width: 992px) {
+    .items{
+        width: 93%;
+        float: left;
+    }
+  }
+  @media screen and (min-width: 500px) {
+    .item {
+      max-width: 75% ;
+    }
+  }
+  @media screen and (min-width: 800px) {
+    .item {
+      width: 35%;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .item{
+      width: 20%;
+    }
+  }
+  
+
+  .qeymatha-box{
+    display: flex;
+    align-items: baseline;
+    flex-direction: row-reverse;
+    height: 30px;
+  }
+
+  .takhfif{
+    font-size: 10px;
+    height: 15px;
+  }
+
+  .zirmenu{
+    font-size: 14px; 
+    font-weight: 300;
+    color: #767790;
+    line-height: 36.1px;
+  }
+
+  ::-webkit-scrollbar-track-piece {
+    width:0px;
+    background-color:#cedbe8;
+}
